@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cozyhomestead:corn"
+    }
+  ],
+  "result": {
+    "item": "cozyhomestead:corn_seeds",
+    "count": 1
+  }
+}

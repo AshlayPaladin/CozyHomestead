@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "cozyhomestead",
-	"version": "${version}",
+	"version": "0.1.0",
 	"name": "Cozy Homestead",
 	"description": "Expands the farming and animal content of Minecraft.",
 	"authors": [

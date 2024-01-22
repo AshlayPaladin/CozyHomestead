@@ -1,0 +1,20 @@
+{
+  "item.cozyhomestead.cabbage" : "Cabbage",
+  "item.cozyhomestead.cilantro" : "Cilantro",
+  "item.cozyhomestead.corn" : "Corn",
+  "item.cozyhomestead.microgreens" : "Microgreens",
+  "item.cozyhomestead.parsley" : "Parsley",
+  "item.cozyhomestead.rice" : "Rice",
+  "item.cozyhomestead.tomato" : "Tomato",
+  "item.cozyhomestead.turnip" : "Turnip",
+
+  "item.cozyhomestead.cabbage_seeds": "Cabbage Seeds",
+  "item.cozyhomestead.cilantro_seeds": "Cilantro Seeds",
+  "item.cozyhomestead.corn_seeds": "Corn Seeds",
+  "item.cozyhomestead.microgreens_seeds": "Microgreens Seeds",
+  "item.cozyhomestead.parsley_seeds": "Parsley Seeds",
+  "item.cozyhomestead.rice_seeds": "Rice Seeds",
+  "item.cozyhomestead.tomato_seeds": "Tomato Seeds",
+
+  "itemgroup.homestead": "Cozy Cafe Homestead"
+}
