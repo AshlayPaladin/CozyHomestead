@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.cozycafemods.homestead.CozyHomestead;
+import org.cozycafemods.homestead.blocks.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup COZYHOMESTEAD_ITEMGROUP = Registry.register(Registries.ITEM_GROUP,

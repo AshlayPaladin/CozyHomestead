@@ -16,5 +16,7 @@
   "item.cozyhomestead.rice_seeds": "Rice Seeds",
   "item.cozyhomestead.tomato_seeds": "Tomato Seeds",
 
+  "block.cozyhomestead.cabbage_crop" : "Cabbage Crop",
+
   "itemgroup.homestead": "Cozy Cafe Homestead"
 }
