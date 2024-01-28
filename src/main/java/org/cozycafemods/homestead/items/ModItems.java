@@ -1,10 +1,13 @@
 package org.cozycafemods.homestead.items;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.cozycafemods.homestead.CozyHomestead;
+import org.cozycafemods.homestead.blocks.ModBlocks;
 
 public class ModItems {
     // Food Items
@@ -18,7 +21,7 @@ public class ModItems {
     public static final Item TURNIP = new TurnipItem();
 
     // Seed Items
-    public static final Item CABBAGE_SEEDS = new CabbageSeedsItem();
+    public static final Item CABBAGE_SEEDS = new AliasedBlockItem(ModBlocks.CABBAGE_CROP_BLOCK, new FabricItemSettings());
     public static final Item CILANTRO_SEEDS = new CilantroSeedsItem();
     public static final Item CORN_SEEDS = new CornSeedsItem();
     public static final Item MICROGREENS_SEEDS = new MicrogreensSeedsItem();
