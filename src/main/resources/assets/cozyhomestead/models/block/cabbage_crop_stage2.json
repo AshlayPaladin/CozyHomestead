@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "cozyhomestead:block/cabbage_crop_block_stage2"
-  }
-}

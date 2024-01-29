@@ -1,10 +1,13 @@
 package org.cozycafemods.homestead.items;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.cozycafemods.homestead.CozyHomestead;
+import org.cozycafemods.homestead.blocks.ModBlocks;
 
 public class ModItems {
     // Food Items
@@ -18,13 +21,13 @@ public class ModItems {
     public static final Item TURNIP = new TurnipItem();
 
     // Seed Items
-    public static final Item CABBAGE_SEEDS = new CabbageSeedsItem();
-    public static final Item CILANTRO_SEEDS = new CilantroSeedsItem();
-    public static final Item CORN_SEEDS = new CornSeedsItem();
-    public static final Item MICROGREENS_SEEDS = new MicrogreensSeedsItem();
-    public static final Item PARSLEY_SEEDS = new ParsleySeedsItem();
-    public static final Item RICE_SEEDS = new RiceSeedsItem();
-    public static final Item TOMATO_SEEDS = new TomatoSeedsItem();
+    public static final Item CABBAGE_SEEDS = new AliasedBlockItem(ModBlocks.CABBAGE_CROP_BLOCK, new FabricItemSettings());
+    public static final Item CILANTRO_SEEDS = new AliasedBlockItem(ModBlocks.CILANTRO_CROP_BLOCK, new FabricItemSettings());
+    public static final Item CORN_SEEDS = new AliasedBlockItem(ModBlocks.CORN_CROP_BLOCK, new FabricItemSettings());
+    public static final Item MICROGREENS_SEEDS = new AliasedBlockItem(ModBlocks.MICROGREENS_CROP_BLOCK, new FabricItemSettings());
+    public static final Item PARSLEY_SEEDS = new AliasedBlockItem(ModBlocks.PARSLEY_CROP_BLOCK, new FabricItemSettings());
+    public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICE_CROP_BLOCK, new FabricItemSettings());
+    public static final Item TOMATO_SEEDS = new AliasedBlockItem(ModBlocks.TOMATO_CROP_BLOCK, new FabricItemSettings());
 
     public static void registerItems(){
         CozyHomestead.LOGGER.info("Registering Items for" + CozyHomestead.MOD_ID);
