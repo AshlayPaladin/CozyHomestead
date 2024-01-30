@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"org.cozycafemods.homestead.CozyHomesteadClient"
+		],
+		"fabric-datagen": [
+			"org.cozycafemods.homestead.CozyHomesteadDataGenerator"
 		]
 	},
 	"mixins": [

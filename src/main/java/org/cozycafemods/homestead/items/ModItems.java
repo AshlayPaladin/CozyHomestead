@@ -22,12 +22,12 @@ public class ModItems {
 
     // Seed Items
     public static final Item CABBAGE_SEEDS = new AliasedBlockItem(ModBlocks.CABBAGE_CROP_BLOCK, new FabricItemSettings());
-    public static final Item CILANTRO_SEEDS = new CilantroSeedsItem();
-    public static final Item CORN_SEEDS = new CornSeedsItem();
-    public static final Item MICROGREENS_SEEDS = new MicrogreensSeedsItem();
-    public static final Item PARSLEY_SEEDS = new ParsleySeedsItem();
-    public static final Item RICE_SEEDS = new RiceSeedsItem();
-    public static final Item TOMATO_SEEDS = new TomatoSeedsItem();
+    public static final Item CILANTRO_SEEDS = new AliasedBlockItem(ModBlocks.CILANTRO_CROP_BLOCK, new FabricItemSettings());
+    public static final Item CORN_SEEDS = new AliasedBlockItem(ModBlocks.CORN_CROP_BLOCK, new FabricItemSettings());
+    public static final Item MICROGREENS_SEEDS = new AliasedBlockItem(ModBlocks.MICROGREENS_CROP_BLOCK, new FabricItemSettings());
+    public static final Item PARSLEY_SEEDS = new AliasedBlockItem(ModBlocks.PARSLEY_CROP_BLOCK, new FabricItemSettings());
+    public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICE_CROP_BLOCK, new FabricItemSettings());
+    public static final Item TOMATO_SEEDS = new AliasedBlockItem(ModBlocks.TOMATO_CROP_BLOCK, new FabricItemSettings());
 
     public static void registerItems(){
         CozyHomestead.LOGGER.info("Registering Items for" + CozyHomestead.MOD_ID);

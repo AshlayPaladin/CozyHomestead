@@ -2,6 +2,8 @@ package org.cozycafemods.homestead;
 
 import net.fabricmc.api.ModInitializer;
 
+import org.cozycafemods.homestead.blocks.ModBlocks;
+import org.cozycafemods.homestead.datagen.ModLootTableProvider;
 import org.cozycafemods.homestead.items.ModItemGroups;
 import org.cozycafemods.homestead.items.ModItems;
 import org.slf4j.Logger;
@@ -24,5 +26,6 @@ public class CozyHomestead implements ModInitializer {
 
 		ModItemGroups.registerItemGroups();
 		ModItems.registerItems();
+		ModBlocks.registerBlocks();
 	}
 }
