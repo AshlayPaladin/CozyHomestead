@@ -3,15 +3,12 @@ package org.cozycafemods.homestead.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.CropBlock;
 import net.minecraft.item.Item;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.state.property.IntProperty;
 import org.cozycafemods.homestead.blocks.*;
 import org.cozycafemods.homestead.items.ModItems;
-
-import java.lang.reflect.Type;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
