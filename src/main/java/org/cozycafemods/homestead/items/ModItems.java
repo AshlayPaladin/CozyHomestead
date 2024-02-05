@@ -21,13 +21,16 @@ public class ModItems {
     public static final Item TURNIP = new TurnipItem();
 
     // Seed Items
-    public static final Item CABBAGE_SEEDS = new AliasedBlockItem(ModBlocks.CABBAGE_CROP_BLOCK, new FabricItemSettings());
+    public static final Item CABBAGE_SEEDS = new CabbageSeedsItem();
     public static final Item CILANTRO_SEEDS = new AliasedBlockItem(ModBlocks.CILANTRO_CROP_BLOCK, new FabricItemSettings());
     public static final Item CORN_SEEDS = new AliasedBlockItem(ModBlocks.CORN_CROP_BLOCK, new FabricItemSettings());
     public static final Item MICROGREENS_SEEDS = new AliasedBlockItem(ModBlocks.MICROGREENS_CROP_BLOCK, new FabricItemSettings());
     public static final Item PARSLEY_SEEDS = new AliasedBlockItem(ModBlocks.PARSLEY_CROP_BLOCK, new FabricItemSettings());
     public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICE_CROP_BLOCK, new FabricItemSettings());
     public static final Item TOMATO_SEEDS = new AliasedBlockItem(ModBlocks.TOMATO_CROP_BLOCK, new FabricItemSettings());
+
+    // Block Items
+    public static final Item FERTILIZER = new FertilizerItem();
 
     public static void registerItems(){
         CozyHomestead.LOGGER.info("Registering Items for" + CozyHomestead.MOD_ID);
@@ -47,5 +50,6 @@ public class ModItems {
         Registry.register(Registries.ITEM, new Identifier(CozyHomestead.MOD_ID, "tomato"), TOMATO);
         Registry.register(Registries.ITEM, new Identifier(CozyHomestead.MOD_ID, "tomato_seeds"), TOMATO_SEEDS);
         Registry.register(Registries.ITEM, new Identifier(CozyHomestead.MOD_ID, "turnip"), TURNIP);
+        Registry.register(Registries.ITEM, new Identifier(CozyHomestead.MOD_ID, "fertilizer"), FERTILIZER);
     }
 }

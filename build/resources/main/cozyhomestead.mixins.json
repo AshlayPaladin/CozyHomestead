@@ -3,7 +3,8 @@
 	"package": "org.cozycafemods.homestead.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"BlockMixin",
+		"CropBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

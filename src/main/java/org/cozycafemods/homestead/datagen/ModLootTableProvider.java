@@ -1,9 +1,13 @@
 package org.cozycafemods.homestead.datagen;
 
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.DataProvider;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.state.property.IntProperty;
@@ -25,6 +29,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addCrop(ModBlocks.RICE_CROP_BLOCK, ModItems.RICE, ModItems.RICE_SEEDS, RiceCropBlock.AGE, RiceCropBlock.MAX_AGE);
         addCrop(ModBlocks.TOMATO_CROP_BLOCK, ModItems.TOMATO, ModItems.TOMATO_SEEDS, TomatoCropBlock.AGE, TomatoCropBlock.MAX_AGE);
         addCrop(ModBlocks.TURNIP_CROP_BLOCK, ModItems.TURNIP, ModItems.TURNIP, TurnipCropBlock.AGE, TurnipCropBlock.MAX_AGE);
+
+        // Add Block Drops
+        addDrop(ModBlocks.FERTILIZED_SOIL, drops(Blocks.DIRT));
+        addDrop(ModBlocks.FERTILIZED_SOIL, drops(Items.BONE_MEAL));
     }
 
     protected void addCrop(Block cropBlock, Item cropProduce, Item cropSeed, IntProperty ageProperty, int maxAge) {

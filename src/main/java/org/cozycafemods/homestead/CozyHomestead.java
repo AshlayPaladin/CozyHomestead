@@ -24,8 +24,8 @@ public class CozyHomestead implements ModInitializer {
 
 		LOGGER.info("Cozy Cafe's Homestead Branch is Now Open!");
 
-		ModItemGroups.registerItemGroups();
 		ModItems.registerItems();
 		ModBlocks.registerBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }

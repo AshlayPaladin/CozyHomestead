@@ -3,14 +3,18 @@ package org.cozycafemods.homestead.blocks;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.state.property.Properties;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.cozycafemods.homestead.CozyHomestead;
+import org.cozycafemods.homestead.items.ModItems;
 
 import java.util.IdentityHashMap;
 
 public class ModBlocks {
+
+    // Create CropBlocks
     public static final Block CABBAGE_CROP_BLOCK = new CabbageCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
     public static final Block CILANTRO_CROP_BLOCK = new CilantroCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
     public static final Block CORN_CROP_BLOCK = new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
@@ -19,6 +23,9 @@ public class ModBlocks {
     public static final Block RICE_CROP_BLOCK = new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
     public static final Block TOMATO_CROP_BLOCK = new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT));
     public static final Block TURNIP_CROP_BLOCK = new TurnipCropBlock(FabricBlockSettings.copyOf(Blocks.POTATOES));
+
+    // Create Other Blocks
+    public static final Block FERTILIZED_SOIL = new FertilizedSoilBlock((FabricBlockSettings.copyOf(Blocks.FARMLAND)));
 
     public static void registerBlocks() {
         CozyHomestead.LOGGER.info("Registering Blocks for " + CozyHomestead.MOD_ID);
@@ -31,5 +38,6 @@ public class ModBlocks {
         Registry.register(Registries.BLOCK, new Identifier(CozyHomestead.MOD_ID, "rice_crop"), RICE_CROP_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier(CozyHomestead.MOD_ID, "tomato_crop"), TOMATO_CROP_BLOCK);
         Registry.register(Registries.BLOCK, new Identifier(CozyHomestead.MOD_ID, "turnip_crop"), TURNIP_CROP_BLOCK);
+        Registry.register(Registries.BLOCK, new Identifier(CozyHomestead.MOD_ID, "fertilized_soil"), FERTILIZED_SOIL);
     }
 }

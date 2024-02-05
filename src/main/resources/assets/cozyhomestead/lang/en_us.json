@@ -16,7 +16,18 @@
   "item.cozyhomestead.rice_seeds": "Rice Seeds",
   "item.cozyhomestead.tomato_seeds": "Tomato Seeds",
 
-  "block.cozyhomestead.cabbage_crop" : "Cabbage Crop",
+  "item.cozyhomestead.fertilizer": "Fertilizer",
+
+  "block.cozyhomestead.cabbage_crop" : "Cabbages",
+  "block.cozyhomestead.cilantro_crop": "Cilantro",
+  "block.cozyhomestead.corn_crop": "Corn",
+  "block.cozyhomestead.microgreens_crop": "Microgreens",
+  "block.cozyhomestead.parsley_crop": "Parsley",
+  "block.cozyhomestead.rice_crop": "Rice",
+  "block.cozyhomestead.tomato_crop": "Tomatoes",
+  "block.cozyhomestead.turnip_crop": "Turnips",
+
+  "block.cozyhomestead.fertilized_soil": "Fertilized Soil",
 
   "itemgroup.homestead": "Cozy Cafe Homestead"
 }

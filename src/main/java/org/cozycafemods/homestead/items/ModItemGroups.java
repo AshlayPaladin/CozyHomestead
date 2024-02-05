@@ -33,6 +33,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PARSLEY_SEEDS);
                         entries.add(ModItems.RICE_SEEDS);
                         entries.add(ModItems.TOMATO_SEEDS);
+
+                        entries.add(ModItems.FERTILIZER);
                     })).build());
 
     public static void registerItemGroups(){
