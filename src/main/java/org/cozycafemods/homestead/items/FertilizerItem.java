@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -34,7 +35,7 @@ public class FertilizerItem extends Item {
         BlockState state = world.getBlockState(pos);
 
         if (state.getBlock() == Blocks.FARMLAND) {
-            BlockState fertilizedBlockState = ModBlocks.FERTILIZED_SOIL.getDefaultState();
+            BlockState fertilizedBlockState = ModBlocks.FERTILIZED_SOIL.getDefaultState().with(MOISTURE, 7);
 
             world.setBlockState(pos, fertilizedBlockState, 3);
 

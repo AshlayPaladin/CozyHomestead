@@ -23,7 +23,7 @@ public class TurnipItem extends Item {
         BlockPos blockPos = context.getBlockPos();
         Block block = world.getBlockState(blockPos).getBlock();
 
-        if (block == Blocks.FARMLAND) {
+        if (block == Blocks.FARMLAND || block == ModBlocks.FERTILIZED_SOIL) {
             PlayerEntity playerEntity = context.getPlayer();
             ItemStack itemStack = context.getStack();
             BlockPos blockPosAbove = blockPos.up();

@@ -16,7 +16,7 @@ import org.cozycafemods.homestead.blocks.ModBlocks;
 public class CropBlockMixin {
     @Inject(method = "randomTick", at = @At("HEAD"), cancellable = true)
     private void onRandomTick(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo ci) {
-        if (world.getBlockState(pos.down()).getBlock() instanceof FertilizedSoilBlock) {
+        if (world.getBlockState(pos.down()).getBlock() ==  ModBlocks.FERTILIZED_SOIL) {
             CropBlock cropBlock = (CropBlock)state.getBlock();
 
             if (world.getBaseLightLevel(pos, 0) >= 9) {

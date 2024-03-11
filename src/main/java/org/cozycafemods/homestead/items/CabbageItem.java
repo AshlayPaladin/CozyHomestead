@@ -18,24 +18,4 @@ public class CabbageItem extends Item {
         super(new FabricItemSettings().food(ModFoodComponents.CABBAGE));
     }
 
-    @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
-        World world = context.getWorld();
-        BlockPos blockPos = context.getBlockPos();
-        Block block = world.getBlockState(blockPos).getBlock();
-
-        if ((block == Blocks.FARMLAND) || (block == ModBlocks.FERTILIZED_SOIL)) {
-            PlayerEntity playerEntity = context.getPlayer();
-            ItemStack itemStack = context.getStack();
-            BlockPos blockPosAbove = blockPos.up();
-            if (world.isAir(blockPosAbove)) {
-                world.setBlockState(blockPosAbove, ModBlocks.CABBAGE_CROP_BLOCK.getDefaultState(), 3);
-                if (!playerEntity.isCreative()) {
-                    itemStack.decrement(1);
-                }
-                return ActionResult.SUCCESS;
-            }
-        }
-        return ActionResult.PASS;
-    }
 }
